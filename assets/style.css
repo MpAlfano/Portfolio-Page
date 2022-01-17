@@ -1,0 +1,45 @@
+:root {
+    --font-title: font-family: 'Acme', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+body {
+    background-color: rgb(24, 199, 199);
+}
+
+header {
+    padding: 1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    background-color: #f1ad2e;
+}
+
+Nav {
+    margin-right: 1%;
+    float: right;
+    font-family: var(--font-title);
+    font-size: 125%;
+}
+
+.menu >* {
+    display: inline-block;
+    padding-top: 4px;
+    
+}
+
+h1 {
+    display: inline-block;
+    font-size: 180%;
+}
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
