@@ -2,6 +2,7 @@
     --font-title: font-family: 'Acme', sans-serif, 'Trebuchet MS';
     --background: #dfa946;
     --font-color: #276e15;
+    --background2: rgb(24, 199, 199);
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {  
-    background-color: rgb(24, 199, 199);
+    background-color: var(--background2);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -27,7 +28,8 @@ main {
 
 aside {
     flex: 1;
-    background-color: #b9c6ae;
+    background-color: var(--background2);
+    border-right: solid;
     padding: 80px;
     text-align: left;
 }
@@ -42,7 +44,6 @@ header {
 
 nav {
     display: flex;
-    /* Align the child elements to the right side of the parent */
     justify-content: flex-end;
     background-color: var(--background)
   }
@@ -53,7 +54,8 @@ ul li {
 }
 
 nav a {
-    color: #13293d;
+    font-size: 150%;
+    color: var(--font-color);
     padding: 14px 10px;
     text-decoration: none;
     text-align: center;
@@ -70,7 +72,7 @@ figure {
 
 h1 {
     display: inline-block;
-    font-size: 220%;
+    font-size: 300%;
 }
 
 
@@ -83,15 +85,23 @@ p {
     font-size: 125%;
 }
 
+footer {
+    padding: 2px;
+    font-family: var(--font-title);
+    color: var(--font-color);
+    background-color: var(--background);
+}
+
 .content {
     display: flex;
-    /* Align the child elements to the top of the parent */
     align-items: flex-start;
     width: 90%;
     margin: 1% auto;
 }
 
 .my-picture {
+    border-radius: 200px;
+    max-width: 300px;
     width: 100%;
 }
 
@@ -108,35 +118,47 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+  background-color: var(--background2);
 }
 
 .card-main {
     border-style: solid;
     border-width: 1px;
-    border-radius: 50px;
     padding: 10px;
     flex: 0 0 375px;
-    box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
+}
+
+.projects {
+  flex: 4;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: var(--background2);
 }
 
 .card {
     border-style: solid;
     border-width: 1px;
-    border-radius: 50px;
     padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(8deg);
+    flex: 0 0 250px;
     box-shadow: 10px 10px 5px #aaaaaa;
+    transform: rotate(5deg);
     margin: 20px;
-  }
+}
 
 .card img,
 .card-main img {
     width: 100%;
 }  
 
-
+.contact-me ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
 
 @media screen and (max-width: 768px) {
     main,
