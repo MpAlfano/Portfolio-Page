@@ -158,8 +158,10 @@ footer {
 }  
 
 .contact-me ul li {
-    display: inline-block;
-    margin-left: 5px;
+    font-size: 145%;
+    float:unset;
+    margin-left: 10px;
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 768px) {

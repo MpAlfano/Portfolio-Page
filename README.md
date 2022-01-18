@@ -13,6 +13,6 @@ You will find a brief explanation of who I am and my background. Also informatio
 
 This is an image preview of the webpage.
 
-![My Portfolio Page](./assets/images/preview.png)
+![My Portfolio Page](./assets/pictures/preview.png)
 
-![View Website Here](https://mpalfano.github.io/Portfolio-Page/)
+[View Website Here](https://mpalfano.github.io/Portfolio-Page/)
