@@ -1,5 +1,7 @@
 :root {
-    --font-title: font-family: 'Acme', sans-serif;
+    --font-title: font-family: 'Acme', sans-serif, 'Trebuchet MS';
+    --background: #dfa946;
+    --font-color: #276e15;
 }
 
 * {
@@ -15,16 +17,16 @@ body {
 
 header {
     padding: 1%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
-    background-color: #f1ad2e;
+    font-family: var(--font-title);
+    color: var(--font-color);
+    background-color: var(--background);
 }
 
 Nav {
     margin-right: 1%;
     float: right;
     font-family: var(--font-title);
-    font-size: 125%;
+    font-size: 155%;
 }
 
 figure {
@@ -38,18 +40,18 @@ figure {
 
 .menu >* {
     display: inline-block;
-    padding-top: 4px;
+    padding: 8px 12px 0 0;
     
 }
 
 h1 {
     display: inline-block;
-    font-size: 180%;
+    font-size: 220%;
 }
 
 
 a {
-    color: #ffffff;
+    color: var(--font-color);
     text-decoration: none;
 }
 
