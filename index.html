@@ -4,48 +4,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/reset.css" />
-        <link rel="stylesheet" href="assets/style.css" />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
         <title>My Portflio</title>
     </head>
     
     <body>
         <header>
             <h1 class="banner">Mark Alfano</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="https://github.com/MpAlfano" target="_blank">Github</a></li>
-                </ul>
-            </nav>
         </header>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="#about-me" >About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/MpAlfano" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+        
     
         <main>
             <figure></figure>
+
             <section class="content">
-                <article class="image">
-                    <img src="assets/pictures/bio.jpg" alt="My picture">
-                    <h2 id="about-me">About me</h2>
-                        <p>
-                            Hello my name is Mark, I ran my own landscaping business for seven years
-                            before deciding I wanted to pursue coding. I had always been intrigued by programming
-                            and the works going on behind the scene on webpages and mobile apps. Now that I have gone
-                            on this path I am creating many works of my own and glad I chose this path as I relaly
-                            enjoy creating new things and thinking of new ways to code efficiently.
-                        </p>
-                <article class ="projects">
-                    <img class="project1" src="assets/pictures/demo.png" alt="Website">
-                    <h2 id="projects"></h2>
-                        <p>
-                            <a href="https://mpalfano.github.io/Revamping-website-code/" target="_blank">Website I recently worked on optimizing code for.</a>
-                        </p>
+                <div>
+                    <img class="my-picture" src="assets/pictures/bio.jpg" alt="My picture">   
+                </div>
+                <article class="about-me">
+                    <h2>About me</h2>
+                    <p>
+                        Hello my name is Mark, I ran my own landscaping business for seven years
+                        before deciding I wanted to pursue coding. I had always been intrigued by programming
+                        and the works going on behind the scene on webpages and mobile apps. Now that I have gone
+                        on this path I am creating many works of my own and glad I chose this path as I relaly
+                        enjoy creating new things and thinking of new ways to code efficiently.
+                    </p>     
+                </article>   
+            </section>    
+            
+            <aside>
+                <h2>All of my recent projects:</h2>
+            </aside>
+
+            <section class="projects-main">
+                <article class ="card-main">
+                    <header id="projects"><a href="https://mpalfano.github.io/Revamping-website-code/" target="_blank">Website I recently worked on optimizing code for.</a></header>
+                    <a href="https://mpalfano.github.io/Revamping-website-code/" target="_blank" id="projects"></a>
+                    <img src="assets/pictures/demo.png" alt="Website">   
                 </article>
 
 
-
-            </section>
+            </section>  
 
 
 
