@@ -27,6 +27,7 @@ main {
 }
 
 aside {
+    font-size: 150%;
     flex: 1;
     background-color: var(--background2);
     border-right: solid;
@@ -50,7 +51,7 @@ nav {
   
 ul li {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 nav a {
@@ -71,6 +72,7 @@ figure {
 }
 
 h1 {
+    padding-top: 16px;
     display: inline-block;
     font-size: 300%;
 }
